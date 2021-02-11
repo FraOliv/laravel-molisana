@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .navbar {
   flex-direction: column;
   align-items: center;
@@ -6,9 +12,15 @@
 
 .links {
   height: 50px;
-  background-color: green;
+  background-color: #bad085;
   width: 100%;
   text-align: center;
+  text-transform: uppercase;
+  justify-content: space-around;
+}
+.links a {
+  text-decoration: none;
+  color: white;
 }
 
 main {
@@ -18,22 +30,46 @@ main {
   align-items: center;
   flex-wrap: wrap;
 }
-
-h2 {
+main h2 {
   width: 100%;
+  text-align: center;
+  color: #1b3173;
 }
-
-.card {
+main .card {
+  width: calc(100%/3);
+  padding: 25px;
+}
+main .card .items {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row;
   flex-wrap: wrap;
 }
-.card img {
+main .card .items .card__overlay {
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  height: 310px;
-  padding: 1.5rem;
-  margin: 1.5rem;
-  text-align: center;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .card .items .card__overlay h5 {
+  font-size: 15px;
+  color: white;
+}
+main .card .items .card__overlay img {
+  width: 48px;
+  color: white;
+}
+main .card .items img {
+  width: 100%;
+}
+main .card .items:hover .card__overlay {
+  opacity: 1;
 }

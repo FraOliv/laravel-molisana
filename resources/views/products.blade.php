@@ -14,11 +14,17 @@
       <h2> LE CORTISSIME</h2>
     @endif
 
-
 <div class="card">
-
+    <div class="items">
+        <div class="card__overlay"> 
+                    <img  src="{{asset ('img/icon.svg')}}" alt="">
+                    
+                    <h5>{{ $dato['titolo'] }}</h5>
+        </div>
         <img src=" {{ $dato['src'] }}" alt="">
 
+
+    </div>
 
 </div>
 

@@ -1,0 +1,30 @@
+main {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h2 {
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.card img {
+  width: 100%;
+  height: 310px;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  background: #423a3a;
+  text-align: center;
+  border: 3px solid white;
+}
+

@@ -3,7 +3,7 @@
 @section('main_content')
     
 <main>
-    @foreach ($data as $dato)
+    @foreach ($pasta as $dato)
     @if ($loop->first)
     <h2>LE LUNGHE</h2>
     @endif

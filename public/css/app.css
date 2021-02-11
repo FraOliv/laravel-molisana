@@ -4,6 +4,19 @@
   display: flex;
 }
 
+.links {
+  height: 50px;
+  background-color: #bad085;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
 main {
   background: url(/img/fondo-slide-classiche.jpg);
   width: 100%;
@@ -14,6 +27,8 @@ main {
 
 h2 {
   width: 100%;
+  text-align: center;
+  color: #1b3173;
 }
 
 .card {
@@ -29,8 +44,6 @@ h2 {
   height: 310px;
   padding: 1.5rem;
   margin: 1.5rem;
-  background: #423a3a;
   text-align: center;
-  border: 3px solid white;
 }
 

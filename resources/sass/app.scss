@@ -95,9 +95,12 @@ main {
     
     }
 }
-.active{
-    border-bottom: 4px solid blue;
-}
+  a:active,
+        a:hover{
+            color: blue; 
+            font-weight: 400;
+              
+        }
 
 
     

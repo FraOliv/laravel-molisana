@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 
     return view('home');
-});
+})->name('home');;
 Route::get('products', function () {
 
     $data = '[
@@ -147,4 +147,11 @@ Route::get('products', function () {
 $pasta = json_decode($data, true);
 
     return view('products', compact('pasta'));
-});
+})->name('products');
+
+Route::get('contacts', function () {
+
+
+
+    return view('contacts');
+}) -> name ('contacts');
